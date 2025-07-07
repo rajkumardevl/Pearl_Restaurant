@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Pearl Restaurant Menu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="icon" href="images/Pearl_Pepper_Logo.png">
+
+    <!-- font famaly cdn  -->
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <!-- Add Bootstrap Icons CDN for footer icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background: #f8f1e4;
+            font-family: 'Jost', sans-serif;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #c17a41 !important;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            background: #fff;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            color: #c17a41 !important;
+            transition: color 0.2s;
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover {
+            color: #fff !important;
+            background: #c17a41;
+            border-radius: 20px;
+        }
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .navbar-logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 50%;
+            border: 2px solid #c17a41;
+            background: #fff;
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-nav .nav-link {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- place navbar here -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/Pearl Pepper Logo.png" alt="Pearl Logo" class="navbar-logo me-2">
+                Pearl Restaurant
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order"><i class="bi bi-bag"></i> Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Restaurant Menu Section with Search and Listing -->
+        <div class="container mt-5">
+            <h1 class="text-center mb-4">Pearl Restaurant Menu</h1>
+            <div class="row mb-4">
+                <div class="col-md-6 mx-auto">
+                    <input type="text" class="form-control mb-2" id="searchInput" placeholder="Search for a dish...">
+                    <select class="form-select mb-2" id="categorySelect">
+                        <option value="all">All Categories</option>
+                        <option value="veg">Veg</option>
+                        <option value="nonveg">Non-Veg</option>
+                        <option value="sweets">Sweets</option>
+                        <option value="chinese">Chinese</option>
+                        <!-- Add more categories as needed -->
+                    </select>
+                </div>
+            </div>
+            <div class="row" id="menuList">
+                <!-- Menu items will be rendered here -->
+            </div>
+            <!-- Pagination controls -->
+            <div class="d-flex justify-content-center mt-4">
+                <nav>
+                    <ul class="pagination" id="paginationNav">
+                        <!-- Pagination items will be rendered here -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+    <!-- Improved Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5 border-top shadow-sm">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-4 mb-3 mb-lg-0 text-lg-start text-center">
+                    <img src="images/Pearl Pepper Logo.png" alt="Pearl Logo"
+                        style="width:48px;height:48px;border-radius:50%;border:2px solid #c17a41;">
+                    <span class="ms-2 fw-bold" style="color:#c17a41;font-family:'Playfair Display',serif;">Pearl
+                        Restaurant</span>
+                </div>
+                <div class="col-lg-4 mb-3 mb-lg-0 text-center">
+                    <div>
+                        <a href="mailto:info@pearlrestaurant.com" class="text-decoration-none text-dark me-3">
+                            <i class="bi bi-envelope-fill"></i> info@pearlrestaurant.com
+                        </a>
+                    </div>
+                    <div>
+                        <a href="tel:+911234567890" class="text-decoration-none text-dark">
+                            <i class="bi bi-telephone-fill"></i> +91 12345 67890
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <i class="bi bi-geo-alt-fill"></i>Rudrapur, Deoria Uttar Pradesh.
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-end text-center">
+                    <a href="https://facebook.com/" target="_blank" class="text-decoration-none text-dark me-3 fs-4">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/" target="_blank" class="text-decoration-none text-dark me-3 fs-4">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="text-decoration-none text-dark me-3 fs-4">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="https://wa.me/911234567890" target="_blank" class="text-decoration-none text-dark fs-4">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center small text-muted">
+                    &copy; 2025 Pearl Restaurant. All rights reserved. | Developed by <a
+                        href="https://github.com/SDGI-2023" target="_blank"
+                        class="text-decoration-none text-primary">SDGI</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script>
+        // Sweets, Veg, and Non-Veg menu data with images
+        const menuData = [
+            {
+                name: "Gulab Jamun",
+                desc: "Soft, spongy balls soaked in rose-flavored sugar syrup.",
+                price: 60,
+                icon: "🍮",
+                img: "https://images.unsplash.com/photo-1604908177522-402b3a7b1e1c?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Besan ke Laddu",
+                desc: "Traditional sweet balls made from gram flour and ghee.",
+                price: 50,
+                icon: "🍬",
+                img: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Gujiya",
+                desc: "Crispy pastry filled with sweet khoya and dry fruits.",
+                price: 70,
+                icon: "🥟",
+                img: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Seviyaan Kheer",
+                desc: "Vermicelli pudding cooked in milk and garnished with nuts.",
+                price: 55,
+                icon: "🥣",
+                img: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Falooda",
+                desc: "Chilled dessert with vermicelli, rose syrup, and ice cream.",
+                price: 80,
+                icon: "🍧",
+                img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Rasmalai",
+                desc: "Soft paneer balls soaked in saffron-flavored milk.",
+                price: 90,
+                icon: "🥛",
+                img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Barfi",
+                desc: "Classic Indian fudge made with condensed milk and sugar.",
+                price: 60,
+                icon: "🍥",
+                img: "https://images.unsplash.com/photo-1542444459-db68ac1c90b9?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Peda",
+                desc: "Soft, thick, and sweet milk-based dessert.",
+                price: 50,
+                icon: "🍡",
+                img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Beshal ka Laddu",
+                desc: "Specialty sweet made from beshal flour and ghee.",
+                price: 55,
+                icon: "🍬",
+                img: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Rasgulla",
+                desc: "Spongy white balls made from chenna and soaked in syrup.",
+                price: 65,
+                icon: "🍥",
+                img: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Buniya",
+                desc: "Crispy, sweet, and crunchy Indian snack.",
+                price: 40,
+                icon: "🍘",
+                img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Bundi",
+                desc: "Tiny, round, sweetened fried gram flour pearls.",
+                price: 45,
+                icon: "🍡",
+                img: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Kaju Katli",
+                desc: "Diamond-shaped cashew fudge, a festive favorite.",
+                price: 120,
+                icon: "💎",
+                img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Gajar ka Halwa",
+                desc: "Carrot pudding cooked with milk, sugar, and ghee.",
+                price: 70,
+                icon: "🥕",
+                img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Jalebi",
+                desc: "Crispy, spiral-shaped sweet soaked in sugar syrup.",
+                price: 50,
+                icon: "🌀",
+                img: "https://images.unsplash.com/photo-1542444459-db68ac1c90b9?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Rabri",
+                desc: "Thickened sweetened milk with layers of cream.",
+                price: 80,
+                icon: "🥛",
+                img: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
+                category: "sweets"
+            },
+            {
+                name: "Paneer Butter Masala",
+                desc: "Cottage cheese cubes in creamy tomato gravy.",
+                price: 160,
+                icon: "🧀",
+                img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+                category: "veg"
+            },
+            {
+                name: "Matar Paneer",
+                desc: "Cottage cheese and peas cooked in spicy curry.",
+                price: 150,
+                icon: "🥘",
+                img: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
+                category: "veg"
+            },
+            {
+                name: "Veg Pulao",
+                desc: "Aromatic rice cooked with mixed vegetables and spices.",
+                price: 120,
+                icon: "🍚",
+                img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80",
+                category: "veg"
+            },
+            {
+                name: "Chicken Curry",
+                desc: "Tender chicken pieces cooked in spicy curry sauce.",
+                price: 180,
+                icon: "🍗",
+                img: "https://images.unsplash.com/photo-1604908177522-402b3a7b1e1c?auto=format&fit=crop&w=400&q=80",
+                category: "nonveg"
+            },
+            {
+                name: "Egg Curry",
+                desc: "Boiled eggs simmered in rich, spicy gravy.",
+                price: 120,
+                icon: "🥚",
+                img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
+                category: "nonveg"
+            },
+            {
+                name: "Fish Fry",
+                desc: "Crispy fried fish fillets with tangy spices.",
+                price: 200,
+                icon: "🐟",
+                img: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
+                category: "nonveg"
+            }
+        ];
+
+        let currentPage = 1;
+        const itemsPerPage = 6;
+        let filteredMenu = [];
+
+        function renderMenuList(filter = "", category = "all", page = 1) {
+            const menuList = document.getElementById('menuList');
+            filteredMenu = menuData.filter(item =>
+                (category === "all" || item.category === category) &&
+                (item.name.toLowerCase().includes(filter) ||
+                    item.desc.toLowerCase().includes(filter))
+            );
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginated = filteredMenu.slice(start, end);
+
+            menuList.innerHTML = paginated.length
+                ? paginated.map(item => `
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="${item.img}" class="card-img-top" alt="${item.name}" style="height:180px;object-fit:cover;">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex align-items-center">
+                                    <span style="font-size:1.5rem;margin-right:8px;">${item.icon}</span>
+                                    ${item.name}
+                                </h5>
+                                <p class="card-text text-muted">${item.desc}</p>
+                                <div class="fw-bold text-primary">&#8377;${item.price}</div>
+                            </div>
+                        </div>
+                    </div>
+                `).join('')
+                : `<div class="col-12 text-center text-muted">No menu items found.</div>`;
+
+            renderPagination(page);
+        }
+
+        function renderPagination(page) {
+            const paginationNav = document.getElementById('paginationNav');
+            const totalPages = Math.ceil(filteredMenu.length / itemsPerPage);
+            let html = '';
+
+            // Prev button
+            html += `<li class="page-item${page === 1 ? ' disabled' : ''}">
+                        <a class="page-link" href="#" aria-label="Previous" data-page="${page - 1}">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>`;
+
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                html += `<li class="page-item${i === page ? ' active' : ''}">
+                            <a class="page-link" href="#" data-page="${i}">${i}</a>
+                        </li>`;
+            }
+
+            // Next button
+            html += `<li class="page-item${page === totalPages || totalPages === 0 ? ' disabled' : ''}">
+                        <a class="page-link" href="#" aria-label="Next" data-page="${page + 1}">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>`;
+
+            paginationNav.innerHTML = html;
+
+            // Add event listeners
+            paginationNav.querySelectorAll('.page-link').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const goto = parseInt(this.getAttribute('data-page'));
+                    if (!isNaN(goto) && goto >= 1 && goto <= totalPages && goto !== currentPage) {
+                        updateMenu(goto);
+                    }
+                });
+            });
+        }
+
+        function updateMenu(page = 1) {
+            currentPage = page;
+            renderMenuList(
+                document.getElementById('searchInput').value.trim().toLowerCase(),
+                document.getElementById('categorySelect').value,
+                currentPage
+            );
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('searchInput').addEventListener('input', () => updateMenu(1));
+            document.getElementById('categorySelect').addEventListener('change', () => updateMenu(1));
+            updateMenu();
+        });
+    </script>
+</body>
+
+</html>
