@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Us - Pearl Restaurant</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" href="images/Pearl Pepper Logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            background: #f8f1e4;
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #c17a41 !important;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navbar {
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            background: #fff;
+        }
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            color: #c17a41 !important;
+            transition: color 0.2s;
+        }
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover {
+            color: #fff !important;
+            background: #c17a41;
+            border-radius: 20px;
+        }
+        .navbar-toggler {
+            border: none;
+        }
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        .navbar-logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 50%;
+            border: 2px solid #c17a41;
+            background: #fff;
+        }
+        @media (max-width: 991.98px) {
+            .navbar-nav .nav-link {
+                margin-bottom: 8px;
+            }
+        }
+        .about-hero {
+            background: linear-gradient(rgba(193,122,65,0.7),rgba(193,122,65,0.7)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') center/cover;
+            color: #fff;
+            padding: 80px 0 60px 0;
+            text-align: center;
+        }
+        .about-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .about-section {
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            padding: 2.5rem 2rem;
+            margin-top: -60px;
+            margin-bottom: 2rem;
+        }
+        .about-img {
+            border-radius: 1rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            width: 100%;
+            object-fit: cover;
+        }
+        .about-values {
+            margin-top: 2rem;
+        }
+        .about-values .icon {
+            font-size: 2rem;
+            color: #c17a41;
+            margin-bottom: 0.5rem;
+        }
+        .signature {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #c17a41;
+            margin-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navbar (same as home page) -->
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/Pearl Pepper Logo.png" alt="Pearl Logo" class="navbar-logo me-2">
+                    Pearl Restaurant
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#order"><i class="bi bi-bag"></i> Order</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About Pearl Restaurant</h1>
+            <p class="lead">A journey of taste, tradition, and togetherness.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="container about-section">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior" class="about-img">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="mb-3" style="color:#c17a41;">Our Story</h2>
+                <p>
+                    Established in 2010, Pearl Restaurant has become a culinary landmark for food lovers seeking authentic flavors and a warm, welcoming atmosphere. Our journey began with a simple vision: to bring people together over delicious food, crafted with passion and the freshest ingredients.
+                </p>
+                <p>
+                    From classic Indian delicacies to global favorites, our menu is a celebration of taste and tradition. Whether you’re here for a family dinner, a business lunch, or a special occasion, we promise a memorable dining experience every time.
+                </p>
+                <div class="signature">- The Pearl Family</div>
+            </div>
+        </div>
+        <div class="row about-values text-center">
+            <div class="col-md-4 mt-4">
+                <div class="icon">🍽️</div>
+                <h5>Quality Ingredients</h5>
+                <p>We use only the freshest and finest ingredients in every dish.</p>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="icon">🤝</div>
+                <h5>Warm Hospitality</h5>
+                <p>Our team treats every guest like family, ensuring you feel at home.</p>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="icon">🌱</div>
+                <h5>Tradition & Innovation</h5>
+                <p>We honor classic recipes while embracing new culinary trends.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as home page) -->
+    <footer class="bg-light text-center text-lg-start mt-5 border-top shadow-sm">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-4 mb-3 mb-lg-0 text-lg-start text-center">
+                    <img src="images/Pearl Pepper Logo.png" alt="Pearl Logo" style="width:48px;height:48px;border-radius:50%;border:2px solid #c17a41;">
+                    <span class="ms-2 fw-bold" style="color:#c17a41;font-family:'Playfair Display',serif;">Pearl Restaurant</span>
+                </div>
+                <div class="col-lg-4 mb-3 mb-lg-0 text-center">
+                    <div>
+                        <a href="mailto:info@pearlrestaurant.com" class="text-decoration-none text-dark me-3">
+                            <i class="bi bi-envelope-fill"></i> info@pearlrestaurant.com
+                        </a>
+                    </div>
+                    <div>
+                        <a href="tel:+911234567890" class="text-decoration-none text-dark">
+                            <i class="bi bi-telephone-fill"></i> +91 12345 67890
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <i class="bi bi-geo-alt-fill"></i>Rudrapur, Deoria Uttar Pradesh.
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-end text-center">
+                    <a href="https://facebook.com/" target="_blank" class="text-decoration-none text-dark me-3 fs-4">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/" target="_blank" class="text-decoration-none text-dark me-3 fs-4">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="text-decoration-none text-dark me-3 fs-4">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="https://wa.me/911234567890" target="_blank" class="text-decoration-none text-dark fs-4">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center small text-muted">
+                    &copy; 2025 Pearl Restaurant. All rights reserved. | Developed by <a href="https://github.com/SDGI-2023" target="_blank" class="text-decoration-none text-primary">SDGI</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

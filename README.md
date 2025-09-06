@@ -1,2 +1,2 @@
 # Pearl_Restaurant
-A fully responsive and user-friendly restaurant website for Pearl Restaurant, featuring an interactive digital menu, QR code integration, and backend-ready inventory management support. Designed for seamless customer experience and efficient restaurant operations.
+A sleek web-based menu system designed for Pearl Restaurant, offering elegant QR code integration, responsive design, and seamless branding. Powered by HTML/CSS, this project allows quick access to restaurant offerings via mobile scans, enhancing customer experience and modernizing table service.
